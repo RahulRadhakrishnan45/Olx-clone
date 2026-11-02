@@ -32,7 +32,7 @@ body {
 }
 
 .search-bar {
-    width: 100%;
+    width: 98%;
     height: 50px;
     display: flex;
     align-items: center;
@@ -87,6 +87,12 @@ body {
 }
 
 .sellbtn img {
-    width: 85px;
+    width: 95px;
     height: auto;
 }
+
+.bell-icon img{
+    width: 34px;
+    height: 34px;
+}
+
