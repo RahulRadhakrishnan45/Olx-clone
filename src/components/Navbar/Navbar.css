@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    height: 75px;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 80px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.navbar-logo {
+    flex-shrink: 0;
+}
+
+.navbar-logo img {
+    height: auto;
+    width: 55px;
+    cursor: pointer;
+}
+
+.search-bar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #d5d5d5;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    padding: 0 25px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.search-bar button {
+    height: 38px;
+    width: 38px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #0066ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 22px;
+    flex-shrink: 0;
+}
+
+.navbar-actions div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.navbar-actions img {
+    width: 32px;
+    height: 32px;  
+    object-fit: contain;
+}
+
+.sellbtn img {
+    width: 85px;
+    height: auto;
+}
