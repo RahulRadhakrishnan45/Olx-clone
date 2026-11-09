@@ -3,11 +3,13 @@ import "./Navbar.css";
 
 import Logo from "../../assets/Logo.png";
 import wishlist_icon from "../../assets/heart_icon.svg";
+import arrow_icon from "../../assets/arrow.svg";
 import avatar_icon from "../../assets/avatar_icon.png";
 import sell_icon from "../../assets/sellButton_icon.png";
 import bell_icon from "../../assets/bell_icon.svg";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const { toggleModal } = props;
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -54,7 +56,7 @@ const Navbar = () => {
         </div>
 
         <div className="avatar">
-          <img src={avatar_icon} alt="User profile" />
+          <span onClick={toggleModal}>Login</span>
         </div>
 
         <div className="sellbtn">
